@@ -9,14 +9,14 @@ stat-reports
 ## Client --> Server ##
 
 #### INITIALISE ####
-|Field Name|Field DataType|Field Description
+|Field Name|DataType|Field Description
 |----------|--------------|-----------------
 |type      |String        |Always "INITIALISE", as that's this packet
 |modID     |String        |The modID allocated by GetDotaStats
 |steamIDs  |JSON          |An array of steamIDs of all the users in-game.
 
 #### REPORT ####
-|Field Name|Field DataType|Field Description
+|Field Name|DataType|Field Description
 |----------|--------------|-----------------
 |type      |String        |Always "REPORT", as that's this packet
 |modID     |String        |The modID allocated by GetDotaStats
@@ -26,7 +26,7 @@ stat-reports
 |reportMisc|String        |Misc. description that the user feels like adding. It will most likely do nothing, but may be displayed to reported user, depending on future implementation design.
 
 #### LIST ####
-|Field Name|Field DataType|Field Description
+|Field Name|DataType|Field Description
 |----------|--------------|-----------------
 |type      |String        |Always "LIST", as that's this packet
 |modID     |String        |The modID allocated by GetDotaStats.
@@ -35,18 +35,18 @@ stat-reports
 ## Server --> Client ##
 
 #### success ####
-|Field Name|Field DataType|Field Description
+|Field Name|DataType|Field Description
 |----------|--------------|-----------------
 |type      |String        |Always "success", as that's this packet
 
 #### failure ####
-|Field Name|Field DataType|Field Description
+|Field Name|DataType|Field Description
 |----------|--------------|-----------------
 |type      |String        |Always "failure", as that's this packet
 |error     |String        |A string describing the error. Only useful for debugging purposes
 
 #### initialise ####
-|Field Name      |Field DataType|Field Description
+|Field Name      |DataType|Field Description
 |----------------|--------------|-----------------
 |type            |String        |Always "initialise", as that's this packet
 |reports         |JSON          |An array of steamIDs and their reports.
@@ -63,8 +63,8 @@ stat-reports
 | --reportLimit  |Real          |The reportAVG limit set by the modder via the site. A user above this limit should be punished.
 
 #### list ####
-|Field Name      |||Field DataType|Field Description
-|----------------|-----|------------|-----------------
+|Field Name      |----|----|DataType|Field Description
+|----------------|-----|-----|------------|-----------------
 |type            |----|----|String       |Always "list", as that's this packet
 |saveID          |----|----|Integer      |The next saveID to use
 |reports         |----|----|JSON         |An array of steamIDs and their reports.
