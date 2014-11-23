@@ -2,7 +2,7 @@ stat-reports
 ============
 
 ###About###
- - Dota 2 custom games helper library for allowing user reporting
+ -Dota 2 custom games helper library for allowing user reporting
 
 # GetDotaStats -StatCollectionReports specifications 1.0 (Method names pending) #
 
@@ -63,13 +63,13 @@ stat-reports
 | --reportLimit  |Real          |The reportAVG limit set by the modder via the site. A user above this limit should be punished.
 
 #### list ####
-|Field Name      |Field DataType|Field Description
-|----------------|--------------|-----------------
-|type            |String        |Always "list", as that's this packet
-|saveID          |Integer       |The next saveID to use
-|reports         |JSON          |An array of steamIDs and their reports.
-| -reportsLeft   |Integer       |The global amount of reports this user has left to make in this mod. This number is ignored for specific reportIDs that have their own reportsLeft filled.
-| -reportID      |Integer       |The ID that matches a report type as set by the modder via the site. (The client will know which to use as a result of another call)
-| --reportCount  |Integer       |The number of reports this user has in this report type.
-| --reportAVG    |Real          |The average number of reports this user has per game.
-| --reportsLeft (Optional)|Integer       |The number of reports this user has left in this category. This field is optional, and if missing, the reportsLeft one level up will be used.
+|Field Name      ||Field DataType|Field Description
+|----------------|----|--------------|-----------------
+|type            |----|String        |Always "list", as that's this packet
+|saveID          |----|Integer       |The next saveID to use
+|reports         |----|JSON          |An array of steamIDs and their reports.
+|----| -reportsLeft   |Integer       |The global amount of reports this user has left to make in this mod. This number is ignored for specific reportIDs that have their own reportsLeft filled.
+|----| -reportID      |Integer       |The ID that matches a report type as set by the modder via the site. (The client will know which to use as a result of another call)
+|----| --reportCount  |Integer       |The number of reports this user has in this report type.
+|----| --reportAVG    |Real          |The average number of reports this user has per game.
+|----| --reportsLeft (Optional)|Integer       |The number of reports this user has left in this category. This field is optional, and if missing, the reportsLeft one level up will be used.
