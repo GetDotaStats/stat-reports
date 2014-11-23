@@ -2,7 +2,7 @@ stat-reports
 ============
 
 ###About###
- -Dota 2 custom games helper library for allowing user reporting
+ - Dota 2 custom games helper library for allowing user reporting
 
 # GetDotaStats -StatCollectionReports specifications 1.0 (Method names pending) #
 
