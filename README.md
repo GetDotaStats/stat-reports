@@ -64,7 +64,7 @@ stat-reports
 
 #### list ####
 |Field Name      |||Field DataType|Field Description
-|----------------|---|------------|-----------------
+|----------------|-----|------------|-----------------
 |type            |-|-|String       |Always "list", as that's this packet
 |saveID          |-|-|Integer      |The next saveID to use
 |reports         |-|-|JSON         |An array of steamIDs and their reports.
